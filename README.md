@@ -10,9 +10,13 @@
 - If the user chooses the wrong answer, it takes away 5 seconds.
 
 The future of this project:
-- In the future, I realize that my questions are no longer displaying.  I cannot figure out why?  I hope to fix this issue and then move on to the next obstacle of this challenge.  
+-I hope to fix this issue and then move on to the next obstacle of this challenge.  
 - Future obstacles to fix:
-    -Adding my styling (I will use bootstrap to increase my practice with it).
+
+    -Adding my styling (I will use bootstrap to increase my practice with it). (I couldn't help but add some.) 
+
+    -I will update the style in the future.
+
     -Incorporate the other functions (save my answer, post my score, save my intials)
 
 ## Website 

@@ -66,8 +66,6 @@ document.getElementById('start').addEventListener('click', () => {
 
 document.getElementById('myButton1').addEventListener('click', () => {
     if (questionOptions[questionNumber].option[0] === questionOptions[questionNumber].answer) {
-        //run through this if statement if you complete the last question; this will make the container disappear and will call on the gameOver method;
-        ;
         if (questionNumber == (questionOptions.length - 1)) {
             document.getElementById('userChoice').innerHTML = " ";
             document.querySelector('.container').style.display = 'none';
