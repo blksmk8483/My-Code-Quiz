@@ -38,7 +38,6 @@ function countdown() {
         else {
             document.getElementById('countdown').textContent = " ";
             clearInterval(timeInterval);
-            gameOver();
         }
 
     }, 1000)
@@ -67,16 +66,16 @@ document.getElementById('start').addEventListener('click', () => {
 document.getElementById('myButton1').addEventListener('click', () => {
     if (questionOptions[questionNumber].option[0] === questionOptions[questionNumber].answer) {
         if (questionNumber == (questionOptions.length - 1)) {
-            document.getElementById('userChoice').innerHTML = " ";
+            document.getElementById('userChoice').innerHTML = "";
             document.querySelector('.container').style.display = 'none';
             
-            return;
+            
         }
         nextQuestion();
     }
     else {
         timeLeft -= 5;
-        document.getElementById('userChoicer').innerHTML = "Oops, try again!"
+        document.getElementById('userChoice').innerHTML = "Oops, try again!"
     }
 
 })
@@ -84,10 +83,8 @@ document.getElementById('myButton2').addEventListener('click', () => {
     if (questionOptions[questionNumber].option[1] === questionOptions[questionNumber].answer) {
 
         if (questionNumber == (questionOptions.length - 1)) {
-            document.getElementById('userChoice').innerHTML = " ";
+            document.getElementById('userChoice').innerHTML = "";
             document.querySelector('.container').style.display = 'none';
-           
-            return;
         }
         nextQuestion();
     }
@@ -101,10 +98,8 @@ document.getElementById('myButton3').addEventListener('click', () => {
     if (questionOptions[questionNumber].option[2] === questionOptions[questionNumber].answer) {
 
         if (questionNumber == (questionOptions.length - 1)) {
-            document.getElementById('userChoice').innerHTML = " ";
-            document.querySelector('.container').style.display = 'none';
-          
-            return;
+            document.getElementById('userChoice').innerHTML = "";
+            document.querySelector('.container').style.display = 'none';  
         }
         nextQuestion();
     }
@@ -118,9 +113,8 @@ document.getElementById('myButton4').addEventListener('click', () => {
     if (questionOptions[questionNumber].option[3] === questionOptions[questionNumber].answer) {
 
         if (questionNumber == (questionOptions.length - 1)) {
-            document.getElementById('userChoice').innerHTML = " ";
+            document.getElementById('userChoice').innerHTML = "";
             document.querySelector('.container').style.display = 'none';
-            return;
         }
         nextQuestion();
     }
@@ -133,7 +127,7 @@ document.getElementById('myButton4').addEventListener('click', () => {
 
 // function for the next question
 function nextQuestion() {
-    document.getElementById('userChoice').innerHTML = " ";
+    document.getElementById('userChoice').innerHTML = "";
     questionNumber++;
 
     document.getElementById('myButton1').value = questionOptions[questionNumber].option[0];
